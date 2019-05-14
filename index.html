@@ -5,13 +5,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
+  <!-- normalize.css -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/lightbox.css">
   <link rel="stylesheet" href="style.css">
+  <!-- modernizr javascript for html shim/shiv -->
+  <script src="js/modernizr.js"></script>
   <title>Css Menu responsive</title>
 </head>
 
 <body>
   <header>
-  <span class="menu-trigger">&#9776;MENU</span>
+    <span class="menu-trigger">&#9776;MENU</span>
     <div class="nav">
       <ul>
         <li>Home</li>
@@ -22,10 +29,42 @@
     </div>
   </header>
 
+
+
+
   <div class="wrapper">
     <div class="image-area">
       <div class="image-text">Heading on the images</div>
     </div>
+<br>
+    <!-- image slideshow or hero image -->
+    <div class="image-slide cycle-slideshow" data-cycle-slides=".slide">
+      <span class="cycle-prev">&laquo;</span>
+      <span class="cycle-next">&raquo;</span>
+      <div class="slide">
+          <img src="images/lightbox/10.960x640.jpg" alt="one">
+        <div class="slide-text">
+          <h3>First image Heading</h3>
+          <p>First image paragraph</p>
+        </div>
+        <div></div>
+      </div>
+      <div class="slide">
+          <img src="images/lightbox/11.960x640.jpg" alt="two">
+        <div class="slide-text">
+          <h3>Second image Heading</h3>
+          <p>First image paragraph</p>
+        </div>
+      </div>
+      <div class="slide">
+          <img src="images/lightbox/12.960x640.jpg" alt="three">
+        <div class="slide-text">
+          <h3>Third image Heading</h3>
+          <p>Third image paragraph</p>
+        </div>
+      </div>
+    </div>
+
     <div class="intro-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, aliquam neque unde at dignissimos eveniet repudiandae sapiente corrupti nam dolorum minima maiores consequatur, animi alias est fugit impedit? Voluptatibus,
       dolorum.</div>
     <div class="gallery">
@@ -80,14 +119,37 @@
     </div>
   </div>
 
+
+  <!-- image gallery -->
+  <!-- thumbnails -->
+  <h1>Image gallery by Lightbox </h1>
+  <div class="thumbnails group">
+    <a href="images/lightbox/1.960x640.jpg" data-lightbox="gallery" data-title="Cool1."><img src="images/lightbox/1.960x640-thumbnail.jpg" alt="FAQ"></a>
+    <a href="images/lightbox/2.960x640.jpg" data-lightbox="gallery" data-title="Cool2."><img src="images/lightbox/2.960x640-thumbnail.jpg" alt="Responsive Mobile"></a>
+    <a href="images/lightbox/3.960x640.jpg" data-lightbox="gallery" data-title="Cool3."><img src="images/lightbox/3.960x640-thumbnail.jpg" alt="Raspberry Pie 3"></a>
+    <a href="images/lightbox/4.960x640.jpg" data-lightbox="gallery" data-title="Cool4."><img src="images/lightbox/4.960x640-thumbnail.jpg" alt="Dsktop"></a>
+    <a href="images/lightbox/5.960x640.jpg" data-lightbox="gallery" data-title="Cool5."><img src="images/lightbox/5.960x640-thumbnail.jpg" alt="Apple Desk"></a>
+    <a href="images/lightbox/6.960x640.jpg" data-lightbox="gallery" data-title="Cool6."><img src="images/lightbox/6.960x640-thumbnail.jpg" alt="Watch"></a>
+    <a href="images/lightbox/7.960x640.jpg" data-lightbox="gallery" data-title="Cool7."><img src="images/lightbox/7.960x640-thumbnail.jpg" alt="Working Culture"></a>
+    <a href="images/lightbox/8.960x640.jpg" data-lightbox="gallery" data-title="Cool8."><img src="images/lightbox/8.960x640-thumbnail.jpg" alt="Single Handed operation"></a>
+    <a href="images/lightbox/9.960x640.jpg" data-lightbox="gallery" data-title="Cool9."><img src="images/lightbox/9.960x640-thumbnail.jpg" alt="Jolly moodl"></a>
+    <a href="images/lightbox/10.960x640.jpg" data-lightbox="gallery" data-title="Cool10."><img src="images/lightbox/10.960x640-thumbnail.jpg" alt="Book Shelf"></a>
+    <a href="images/lightbox/11.960x640.jpg" data-lightbox="gallery" data-title="Cool11."><img src="images/lightbox/11.960x640-thumbnail.jpg" alt="iPhone"></a>
+    <a href="images/lightbox/12.960x640.jpg" data-lightbox="gallery" data-title="Cool12."><img src="images/lightbox/12.960x640-thumbnail.jpg" alt="PHP code"></a>
+  </div><!-- /thumbnails -->
+
+
+
   <footer>
     <div class="footer-text">
       <p>&copy; Xivig 2019. All rights reserved</p>
     </div>
 
   </footer>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/custom.js"></script>
+  <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.cycle2.min.js"></script>
+  <script src="js/lightbox.min.js"></script>
+  <script src="js/custom.js"></script>
 </body>
 
 </html>
