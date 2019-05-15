@@ -64,7 +64,7 @@ body {
 }
 
 .intro-text {
-    text-align: justify;
+    text-align: center;
     font-size: 1.2rem;
     max-width: auto;
     margin: 0px auto;
@@ -140,6 +140,16 @@ div.nav-expanded {
   color: white;
   padding: 20px;
   height: 40px;
+}
+
+
+/* our team section */
+
+.team-section {
+	width: 100%;
+	margin-top: 20px;
+	text-align: center;
+	
 }
 
 
@@ -220,7 +230,7 @@ div.nav-expanded {
 }
 
 /* media query for different devices */
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
 
   .menu-trigger {
     display: none;
@@ -251,7 +261,21 @@ div.nav-expanded {
     .thumbnails a {
   		width: 33%;
   	}
-
+	
+	
+	.team-section-1 {
+		float: left;
+  		width: 50%;
+		
+	}
+	
+	/* Clear floats after the columns */
+.team-section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+	
 }
 
 @media screen and (min-width: 1024px) {
